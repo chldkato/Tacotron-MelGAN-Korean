@@ -58,11 +58,12 @@ melgan은 학습이 오래걸리기 때문에 따로 적지 않았습니다
 ### Inference
    ```
    python tacotron-eval.py --checkpoint logs-tacotron/model.ckpt-40000
-   python melgan-eval.py --load_dir logs-melgan/ckpt-970k.pt
    ```
      * tacotron-eval.py에서 생성할 문장을 정하고 실행하면 output-tacotron에 멜-스펙트로그램이 저장됩니다
+   ```
+   python melgan-eval.py --load_dir logs-melgan/ckpt-970k.pt
+   ```     
      * melgan-eval.py를 실행하면 output-melgan에 음성과 스펙트로그램이 저장됩니다
-
 
 윈도우에서 Tacotron 한국어 TTS 학습하기
   * https://chldkato.tistory.com/141
